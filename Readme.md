@@ -20,6 +20,11 @@ Install jsipfs CLI
 $ npm install ipfs@0.35.0 --global 
 ```
 
+Create js ipfs-repository
+```sh
+$ jsipfs init
+```
+
 Run daemon with pub-sub flag 
 ```sh
 $ jsipfs daemon --enable-pubsub-experiment 

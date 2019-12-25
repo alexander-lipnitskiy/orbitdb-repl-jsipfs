@@ -22,9 +22,9 @@ async function main() {
         utils.putRecordInDb(db, "peer-http-api-client");
     }, 2000);
 
-    setInterval(() => {
-            utils.getAllRecords(db);
-        }, 2000)
+    // setInterval(() => {
+    //         utils.getAllRecords(db);
+    //     }, 2000)
 }
 
 main();

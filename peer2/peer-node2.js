@@ -47,7 +47,7 @@ ipfs.on('ready', async () => {
         utils.putRecordInDb(db, "peer-node2");
     }, 2000)
 
-    // setInterval(() => {
-    //     utils.getAllRecords(db);
-    // }, 2000)
+    setInterval(() => {
+        utils.getAllRecords(db);
+    }, 2000)
 });

@@ -35,9 +35,9 @@ ipfs.on('ready', async () => {
         identity: identity
     });
 
-    const db = await utils.createDB(orbitdb, "peers-time");
+    // const db = await utils.createDB(orbitdb, "peers-time");
 
-    // const db = await orbitdb.open(config.db_address);
+    const db = await orbitdb.open(config.db_address);
 
     utils.listenOrbitdbEvents(db);
 
@@ -47,9 +47,9 @@ ipfs.on('ready', async () => {
         utils.putRecordInDb(db, "peer-node");
     }, 2000);
 
-    // setInterval(() => {
-    //     utils.getAllRecords(db);
-    // }, 2000)
+    setInterval(() => {
+        utils.getAllRecords(db);
+    }, 2000)
 });
 
 

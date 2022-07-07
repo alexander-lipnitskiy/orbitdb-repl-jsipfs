@@ -6,7 +6,7 @@
   "dependencies": {
     "ipfs": "^0.40.0",
     "ipfs-http-client": "^40.1.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "orbit-db": "^0.23.0",
     "orbit-db-identity-provider": "^0.3.0"
   }
